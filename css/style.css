@@ -43,6 +43,9 @@ p {
     padding-top: 2px;
     padding: 0;
     margin-right: 30px; }
+    @media (min-width: 767.98px) and (max-width: 1199.98px) {
+      .topnav .logo {
+        margin-right: 0px; } }
     @media (max-width: 767.98px) {
       .topnav .logo img {
         max-width: 80%;
@@ -50,6 +53,9 @@ p {
         margin-top: 10px;
         position: relative;
         left: -15px; } }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      .topnav .logo img {
+        max-width: 90%; } }
   .topnav .btn-fale {
     background-color: #341e34;
     color: #fff;
@@ -62,6 +68,11 @@ p {
         font-size: 13px;
         margin-top: 15px;
         padding: 10px 15px !important; } }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      .topnav .btn-fale {
+        padding: 15px 25px;
+        border-radius: 5px;
+        margin-left: 0px; } }
   @media (min-width: 768px) {
     .topnav {
       padding: 25px 0 0px; } }
@@ -89,6 +100,14 @@ p {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.04px; }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    .topnav a {
+      padding: 16px 10px 0;
+      font-size: 11px; } }
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .topnav .container {
+    width: 100%; } }
 
 .topnav .icon {
   display: none; }
@@ -113,9 +132,10 @@ p {
     display: block;
     text-align: left; } }
 
-#myTopnav .li-menu {
-  width: 100%;
-  padding: 16px 0px 0; }
+@media (max-width: 767.98px) {
+  #myTopnav .li-menu {
+    width: 100%;
+    padding: 16px 0px 0; } }
 
 .div1 {
   margin-bottom: 150px; }
@@ -143,6 +163,9 @@ p {
       font-size: 15px; } }
   .div1 .col-sm-6 {
     position: relative; }
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+      .div1 .col-sm-6:nth-of-type(2) {
+        padding-top: 100px; } }
     .div1 .col-sm-6 img {
       max-width: 100%;
       position: relative;
@@ -235,6 +258,9 @@ p {
         .div1 .col-sm-6 .mask-div1 {
           border-bottom: 100px solid #fff;
           border-left: 315px solid transparent; } }
+      @media (min-width: 768px) and (max-width: 1199.98px) {
+        .div1 .col-sm-6 .mask-div1 {
+          border-left: 352px solid transparent; } }
       .div1 .col-sm-6 .mask-div1 .separator-1 {
         width: 400px;
         right: -188px;

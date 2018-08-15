@@ -59,6 +59,10 @@ p {
     	padding: 0;
     	margin-right: 30px;	
 
+    	@media (min-width: 767.98px) and (max-width: 1199.98px) {
+    		margin-right: 0px;	
+    	}
+
     	img {
     		@media (max-width: 767.98px) {
     			max-width: 80%;
@@ -67,6 +71,10 @@ p {
 			    position: relative;
     			left: -15px;
     		}
+
+    		@media (min-width: 768px) and (max-width: 1199.98px) {
+    		    max-width: 90%;	
+	    	}
     	}
 	}
 
@@ -83,6 +91,12 @@ p {
 		    margin-top: 15px;
 		    padding: 10px 15px !important;
 		}	
+
+		@media (min-width: 768px) and (max-width: 1199.98px) {
+	        padding: 15px 25px;
+		    border-radius: 5px;
+		    margin-left: 0px;	
+    	}
 	}
 
   @media (min-width: 768px) {
@@ -117,6 +131,19 @@ p {
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 0.04px;
+
+	@media (min-width: 768px) and (max-width: 1199.98px) {
+		padding: 16px 10px 0;
+		font-size: 11px;	
+	}
+}
+
+.topnav {
+	.container {
+		@media (min-width: 768px) and (max-width: 1199.98px) {
+			width: 100%;	
+		}
+	}
 }
 
 .topnav .icon {
@@ -148,9 +175,12 @@ p {
   }
 }
 
+
 #myTopnav .li-menu {
-	width: 100%;		
-    padding: 16px 0px 0;
+	@media (max-width: 767.98px) {
+		width: 100%;		
+	    padding: 16px 0px 0;
+	}
 }
 
 .div1 {
@@ -189,6 +219,12 @@ p {
 
 	.col-sm-6 {
 	position: relative;	
+
+	&:nth-of-type(2) {
+		@media (min-width: 768px) and (max-width: 1199.98px) {
+			padding-top: 100px;
+		}
+	}
 
 		img {
 			max-width: 100%;	
@@ -300,6 +336,10 @@ p {
 		    @media (max-width: 767.98px) {
 				border-bottom: 100px solid #fff;
 				border-left: 315px solid transparent;
+			}
+
+			@media (min-width: 768px) and (max-width: 1199.98px) {
+				border-left: 352px solid transparent;
 			}
 
 			.separator-1 {
