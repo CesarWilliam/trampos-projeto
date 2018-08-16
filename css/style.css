@@ -903,7 +903,7 @@ p {
     position: relative; }
     @media (max-width: 767.98px) {
       .div5 .col-md-6:first-of-type img {
-        margin-left: -118px;
+        margin-left: -140px;
         max-width: 134%; } }
     @media (min-width: 768px) and (max-width: 991.98px) {
       .div5 .col-md-6:first-of-type img {
