@@ -4,22 +4,24 @@ $color-gray: #8a8a8a;
 $color-btn: #45f5d1;
 
 body {
-	font-family: 'Roboto Slab', serif;			
+	font-family: 'Roboto Slab', serif !important;			
 }
 
 h1 {
-	font-weight: 700;	
+	font-weight: 700 !important;	
 	color: $color-prim;
-	font-size: 50px;
+	font-size: 50px !important;
+	font-family: 'Roboto Slab', serif !important;
 }
 
 h2 {
 	$color-prim: #341e34;
 	font-size: 35px;
 	line-height: 40px;
-	font-weight: 700;
+	font-weight: 700 !important;
 	letter-spacing: 0.1px;
 	color: $color-prim;
+	font-family: 'Roboto Slab', serif !important;
 }
 
 p {
@@ -221,8 +223,9 @@ p {
 
 	h1 {
 		@media (max-width: 767.98px) {
-		    font-size: 19px;
+		    font-size: 19px !important;
     		width: 162px;
+		    margin-top: 0;	
 		}
 
 	}
@@ -573,7 +576,8 @@ p {
 				font-size: 35px;
 				font-weight: 600;
 				letter-spacing: 0.06px;
-				margin-bottom: 0;
+				margin-bottom: 10px;
+				margin-top: 15px;
 			}
 			&:last-of-type {
 				font-size: 20px;
@@ -1274,6 +1278,7 @@ p {
 		&:last-of-type {
 		    max-width: 500px;
 	        margin-top: 75px;
+            transform: translate3d(0px, 0px, 0px);
 
 	        @media (max-width: 767.98px) {
 				margin-top: 45px;	
@@ -1589,6 +1594,28 @@ p {
 		padding-top: 50px;
     }	
 
+    .mdl-textfield__input {
+    	color: #fff;
+    	border-bottom: 1px solid #fff;
+    }
+
+    .mdl-textfield__label {
+    	color: #fff;
+	    white-space: unset;	
+
+	    @media (max-width: 767.98px) {
+    	    font-size: 13px;	
+	    }
+
+	    @media (max-width: 768px) and (max-width: 991.98px) {
+    	    font-size: 15px;	
+	    }	
+    }
+
+    .mdl-textfield {
+        width: 400px;
+    }
+
 	h2 { 
 		color: #fff;
 		text-align: center;
@@ -1610,38 +1637,22 @@ p {
 		    line-height: 18px;
 		}
 	}
-	label {
-		color: #fff;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 27px;
-		letter-spacing: 0.04px;
-		display: block;
-	}
-
-	input {
-		height: 40px;
-		margin-bottom: 20px;
-	}
-
-	input.custom-width {
-		width: 80%;
-
-		@media (max-width: 767.98px) {
-			width: 100%;
-		}
-	}
-
-	input, textarea {
-		border-radius: 7px;
-		border: none;
-		width: 100%;
-	    padding: 10px;	
-	}
 
 	.btn-custom {
 		margin-bottom: 80px;	
 		margin-top: 70px;
+	}
+
+	.col-md-6 {
+	 .is-focused {
+	 	margin-bottom: 0;
+	 }
+	}
+
+	.mdl-textfield__label {
+		&:after {
+		    bottom: 12px;	
+		}
 	}
 }
 
@@ -1673,6 +1684,10 @@ p {
 			    display: block;
 			    max-width: 130px;
     		}
+
+    		@media (min-width: 768px) and (max-width: 991.98px){
+		    	max-width: 150px;
+		    }
     	}
 
     	&:nth-of-type(2) {
@@ -1740,6 +1755,10 @@ p {
     		@media (max-width: 767.98px) {
 	    	    text-align: center;
     	        margin-bottom: 35px;
+	            font-size: 35px;
+		    }
+		    @media (min-width: 768px) and (max-width: 991.98px){
+		    	font-size: 30px;
 		    }
     	}
 

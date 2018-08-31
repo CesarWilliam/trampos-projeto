@@ -37,6 +37,15 @@
 <script type="text/javascript" src="js/index.js"></script>
 <script src="js/owl.carousel.js"></script>
 
+<!-- Material Design Lite -->
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script> 
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<!-- Material Design icon font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>	
  
@@ -59,7 +68,7 @@
 </div>
 <!-- fim header -->   
 
-<div class="div1">
+<div class="div1" data-aos="fade" data-aos-duration="1000">
 	
 	<div class="container">
 		<div class="row">
@@ -103,25 +112,25 @@
 
 	<div class="container">
 		<div class="row row-1">
-			<div class="col-md-3">
+			<div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/chart-bar.png" alt="">
 				<p>3.255.905</p>
 				<p>acessos por mês</p>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/list-alt.png" alt="">
 				<p>4.507</p>
 				<p>empresas divulgando</p>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/user.png" alt="">
 				<p>314.455</p>
 				<p>candidatos</p>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/comments.png" alt="">
 				<p>727.000</p>
 				<p>seguidores nas redes</p>
@@ -153,7 +162,7 @@
 				<p>seguidores nas redes</p>
 			</div>
 		</div>
-
+ 
 	</div>
 </div>
 
@@ -162,7 +171,7 @@
 		<div class="row">
 			<h2 class="d-sm-block d-md-none">Caesar</h2>
 
-			<div class="col-md-6">
+			<div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/bitmap(1).png">
 				<div class="mask-div3"></div>
 				<div class="separator1"></div>
@@ -253,7 +262,7 @@
 					<div class="col-10 col-md-10">
 						<p>Integramos esta página com a solução de gestão de talentos do trampos.co</p>
 					</div>
-				</div>
+				</div> 
 
 				<div class="row">
 					<div class="col-2 col-md-2">
@@ -268,7 +277,7 @@
 
 			</div>
 
-			<div class="col-md d-none d-sm-block">
+			<div class="col-md d-none d-sm-block" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/modelo.png" alt="">
 				<div class="mask-div4"></div>
 				<div class="separator1"></div>
@@ -290,8 +299,8 @@
 	<div class="container">
 		<div class="row">
 			<h2 class="d-sm-block d-md-none">Banco de Talentos</h2>
-
-			<div class="col-md-6">
+   
+			<div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
 				<img src="img/bitmap(2).png" alt="">
 				<div class="separator1"></div>
 				<div class="separator2"></div>
@@ -356,7 +365,7 @@
 </div>
  
 <div class="div6">
-	<h2>Empresas que já utilizam a Gestão de Talentos</h2>
+	<h2 data-aos="fade-up" data-aos-duration="1000">Empresas que já utilizam a Gestão de Talentos</h2>
 
 	<div class="container">
 		<div class="owl-carousel owl-theme">
@@ -377,31 +386,50 @@
 		
 		<div class="row justify-content-center">
 			<div class="col-md-6 col-lg-5">
-				<label for="">Nome:</label>
-				<input type="text" value="" name="" class="" id="">
 
-				<label for="">Email:</label>
-				<input type="text" placeholder="Digite seu email" value="" name="" class="" id="">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="sample1">
+					<label class="mdl-textfield__label" for="sample1">Nome</label>
+				</div>
 
-				<label for="">Empresa:</label>
-				<input type="text" value="" name="" class="" id="">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="sample1">
+					<label class="mdl-textfield__label" for="sample1">E-mail</label>
+				</div>
 
-				<label for="">Telefone:</label>
-				<input type="text" value="" name="" class="custom-width" id="">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="sample1">
+					<label class="mdl-textfield__label" for="sample1">Empresa</label>
+				</div>   
 
-				<label for="">Colaboradores:</label>
-				<input type="text" value="" name="" class="custom-width" id="">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+					<label class="mdl-textfield__label" for="sample2">Telefone</label>
+					<span class="mdl-textfield__error">Não é um número!</span>
+				</div>
+
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="sample1">
+					<label class="mdl-textfield__label" for="sample1">Colaboradores</label>
+				</div>
 			</div>
 
 			<div class="col-md-6 col-lg-5">
-				<label for="">Cargo:</label>
-				<input type="text" value="" name="" class="" id="">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="sample1">
+					<label class="mdl-textfield__label" for="sample1">Cargo</label>
+				</div>
 
-				<label for="">Quantas vagas em aberto sua empresa possui?</label>
-				<input type="text" value="" name="" class="" id="">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="sample1">
+					<label class="mdl-textfield__label" for="sample1">Quantas vagas em aberto sua empresa possui?</label>
+				</div>
 
-				<label for="">Qual é a sua maior dificuldade no recrutamento de talentos para a sua empresa?</label>
-				<textarea name="" rows="9"></textarea>
+				<div class="mdl-textfield mdl-js-textfield">
+					<textarea class="mdl-textfield__input" type="text" rows= "9" id="sample5" ></textarea>
+					<label class="mdl-textfield__label" for="sample5">Qual é a sua maior dificuldade no recrutamento de talentos para a sua empresa?</label>
+				</div>
+
 			</div>
 
 			<a href="#" class="btn-custom">SOLICITAR DEMONSTRAÇÃO</a>

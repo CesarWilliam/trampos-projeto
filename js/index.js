@@ -30,26 +30,10 @@ $(document).ready(function(){
 	});
 
 
-	var iScrollPos = 0;
-	var x = 0;
-
-	$(window).scroll(function () {
-
-	    var iCurScrollPos = $(this).scrollTop();
-	    x ++ ;
-	    x = x + 2 ;
-
-	    if (iCurScrollPos > iScrollPos) {
-	        
-		    var srotate = "margin-top:" + x;
-		    $(".div1").css({"margin-top:" : srotate, "margin-top:" : srotate});
-	    
-	    } else {
-	       //Scrolling Up
-	    }
-
-	    iScrollPos = iCurScrollPos;
-	});
-
-
 });
+
+$(document).ready(function(){
+  AOS.init({ disable: 'mobile' });
+}); 
+
+
