@@ -43,6 +43,12 @@
 <!-- Material Design icon font -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+<link rel="stylesheet" href="node_modules/material-design-lite/material.min.css">
+<script defer src="node_modules/material-design-lite/material.min.js"></script>   
+
+<script defer src="node_modules/getmdl-select/getmdl-select.min.js"></script>
+<link rel="stylesheet" href="node_modules/getmdl-select/getmdl-select.min.css">
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -387,47 +393,68 @@
 		<div class="row justify-content-center">
 			<div class="col-md-6 col-lg-5">
 
-				<div class="mdl-textfield mdl-js-textfield">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
 					<input class="mdl-textfield__input" type="text" id="sample1">
 					<label class="mdl-textfield__label" for="sample1">Nome</label>
 				</div>
 
-				<div class="mdl-textfield mdl-js-textfield">
-					<input class="mdl-textfield__input" type="text" id="sample1">
-					<label class="mdl-textfield__label" for="sample1">E-mail</label>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="sample2">
+					<label class="mdl-textfield__label" for="sample2">E-mail</label>
 				</div>
 
-				<div class="mdl-textfield mdl-js-textfield">
-					<input class="mdl-textfield__input" type="text" id="sample1">
-					<label class="mdl-textfield__label" for="sample1">Empresa</label>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="sample3">
+					<label class="mdl-textfield__label" for="sample3">Empresa</label>
 				</div>   
 
-				<div class="mdl-textfield mdl-js-textfield">
-					<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-					<label class="mdl-textfield__label" for="sample2">Telefone</label>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+					<label class="mdl-textfield__label" for="sample4">Telefone</label>
 					<span class="mdl-textfield__error">Não é um número!</span>
 				</div>
 
-				<div class="mdl-textfield mdl-js-textfield">
-					<input class="mdl-textfield__input" type="text" id="sample1">
-					<label class="mdl-textfield__label" for="sample1">Colaboradores</label>
-				</div>
+				<div class="mdl-textfield mdl-js-textfield getmdl-select">
+			        <input type="text" value="" class="mdl-textfield__input" id="sample5" readonly>
+			        <input type="hidden" value="" name="sample5">
+			        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+			        <label for="sample5" class="mdl-textfield__label">Colaboradores</label>
+			        <ul for="sample5" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+			            <li class="mdl-menu__item" data-val="ana">Somente eu</li>
+			            <li class="mdl-menu__item" data-val="ger">2 a 10</li>
+			            <li class="mdl-menu__item" data-val="dir">11 a 50</li>
+			            <li class="mdl-menu__item" data-val="soc">51 a 200</li>
+			            <li class="mdl-menu__item" data-val="out">201 a 500</li>
+			            <li class="mdl-menu__item" data-val="est">Mais de 500</li>
+			        </ul>
+			    </div>
+
 			</div>
 
 			<div class="col-md-6 col-lg-5">
-				<div class="mdl-textfield mdl-js-textfield">
-					<input class="mdl-textfield__input" type="text" id="sample1">
-					<label class="mdl-textfield__label" for="sample1">Cargo</label>
+				<div class="mdl-textfield mdl-js-textfield getmdl-select">
+			        <input type="text" value="" class="mdl-textfield__input" id="sample6" readonly>
+			        <input type="hidden" value="" name="sample6">
+			        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+			        <label for="sample6" class="mdl-textfield__label">Cargo</label>
+			        <ul for="sample6" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+			            <li class="mdl-menu__item" data-val="ana">Analista</li>
+			            <li class="mdl-menu__item" data-val="ger">Gerente/Coordenador</li>
+			            <li class="mdl-menu__item" data-val="dir">Diretor</li>
+			            <li class="mdl-menu__item" data-val="soc">Sócio/CEO</li>
+			            <li class="mdl-menu__item" data-val="out">Outros cargos</li>
+			            <li class="mdl-menu__item" data-val="est">Estudante</li>
+			        </ul>
+			    </div>
+
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<input class="mdl-textfield__input" type="text" id="sample7">
+					<label class="mdl-textfield__label" for="sample7">Quantas vagas em aberto sua empresa possui?</label>
 				</div>
 
-				<div class="mdl-textfield mdl-js-textfield">
-					<input class="mdl-textfield__input" type="text" id="sample1">
-					<label class="mdl-textfield__label" for="sample1">Quantas vagas em aberto sua empresa possui?</label>
-				</div>
-
-				<div class="mdl-textfield mdl-js-textfield">
-					<textarea class="mdl-textfield__input" type="text" rows= "9" id="sample5" ></textarea>
-					<label class="mdl-textfield__label" for="sample5">Qual é a sua maior dificuldade no recrutamento de talentos para a sua empresa?</label>
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+					<textarea class="mdl-textfield__input" type="text" rows= "9" id="sample8" ></textarea>
+					<label class="mdl-textfield__label" for="sample8">Qual é a sua maior dificuldade no recrutamento de talentos para a sua empresa?</label>
 				</div>
 
 			</div>
